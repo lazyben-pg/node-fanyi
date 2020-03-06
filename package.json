@@ -1,0 +1,19 @@
+{
+  "name": "node-fanyi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "ts-node-dev src/main.ts"
+  },
+  "repository": "git@github.com:Lazzben/node-fanyi.git",
+  "author": "lazzben <458861463@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "commander": "^4.1.1",
+    "md5": "^2.2.1"
+  },
+  "devDependencies": {
+    "@types/md5": "^2.1.33",
+    "@types/node": "^13.7.7"
+  }
+}
