@@ -1,6 +1,6 @@
 {
-  "name": "node-fanyi",
-  "version": "1.0.0",
+  "name": "node-fanyi-1",
+  "version": "0.0.1",
   "main": "dist/main.js",
   "scripts": {
     "start": "ts-node-dev src/main.ts"
