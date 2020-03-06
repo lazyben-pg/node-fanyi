@@ -11,7 +11,7 @@ type baiduResult = {
   trans_result: { src: string, dst: string }[]
 }
 
-export const translate = (word) => {
+export const translate = (word: string) => {
   let from, to
   if (/[a-zA-z]/.test(word)) {
     from = 'en'
@@ -41,9 +41,9 @@ export const translate = (word) => {
   };
 
   const request = https.request(options, (response) => {
-    let array = []
+    let array: Buffer[] = []
 
-    response.on('data', (chunk) => {
+    response.on('data', (chunk: Buffer) => {
       array.push(chunk)
     });
 

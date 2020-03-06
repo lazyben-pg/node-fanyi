@@ -1,10 +1,16 @@
 {
   "name": "node-fanyi",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
     "start": "ts-node-dev src/main.ts"
   },
+  "bin": {
+    "fy": "dist/cli.js"
+  },
+  "files": [
+    "dist/**/*.js"
+  ],
   "repository": "git@github.com:Lazzben/node-fanyi.git",
   "author": "lazzben <458861463@qq.com>",
   "license": "MIT",
