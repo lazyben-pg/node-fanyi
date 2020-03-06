@@ -12,13 +12,22 @@ type baiduResult = {
 }
 
 export const translate = (word) => {
+  let from, to
+  if (/[a-zA-z]/.test(word)) {
+    from = 'en'
+    to = 'zh'
+  } else {
+    from = 'zh'
+    to = 'en'
+  }
+
   const salt = Math.random()
   const sign = md5(appid + word + salt + appSecret)
 
   const query = querystring.stringify({
     q: word,
-    from: 'en',
-    to: 'zh',
+    from: from,
+    to: to,
     appid: appid,
     salt: salt,
     sign: sign
